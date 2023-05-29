@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversion Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="glass-molecule-blue-science-background-dof-effect-scientific-d-illustration-129837870.jpg" />
+  </head>
+  <body>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <strong>BRAGGS CALCULATOR</strong>
+    <div class="top-right"><a href=http://127.0.0.1:5501/about.html>About</a></div>
+    <div class="center">
+      <p>WHAT DO YOU WANT TO FIND?</p>
+    </div>
+    <div class="opt">
+    <form id="form">
+      <label>
+        <input type="radio" name="option" id="option1" value="1" /> Interplanar Spacing
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="option" id="option2" value="2" /> Order
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="option" id="option3" value="3" /> Wavelength Incident
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="option" id="option4" value="4" /> Theta
+      </label>
+      <br/>
+      <br/>
+      <button type="button" onclick="switchForms()">Submit</button> 
+    </form>
+  </div>
+    <div class="form0">
+    <form id="form1"style="display:none;">
+      <label>Value of Theta:</label>
+      <input type="number" name="theta1" id="theta1" placeholder="Enter In Degree"/>
+      <br/>
+      <label>Incident Wavelength:</label>
+      <input type="number" name="wavelength1" id="wavelength1" placeholder="Enter In Angstrom" />
+      <br/>
+      <label>Value of Order:</label>
+      <input type="number" name="order1" id="order1" placeholder="Enter an Integer" />
+      <br/>
+      <br/>
+      <button type="button" onclick="calculate()">Calculate Interplanar Spacing</button>
+      <br/>
+      <br/>
+      <label>Result:</label>
+      <span id="result1"></span>
+
+    </form>
+    <form id="form2" style="display:none;">
+      <label>Value of Theta:</label>
+      <input type="number" name="theta2" id="theta2" placeholder="Enter In Degree"/>
+      <br/>
+      <label>Incident Wavelength:</label>
+      <input type="number" name="wavelength2" id="wavelength2" placeholder="Enter In Angstrom" />
+      <br/>
+      <label>Interplanar Spacing:</label>
+      <input type="number" name="spacing2" id="spacing2" placeholder="Enter In Pm" />
+      <br/>
+      <br/>
+      <button type="button" onclick="calculate()">Calculate order</button>
+      <br/>
+      <br/>
+      <label>Result:</label>
+      <span id="result2"></span>
+
+    </form>
+    <form id="form3" style="display:none;">
+      <label>Value of Theta:</label>
+      <input type="number" name="theta3" id="theta3" placeholder="Enter In Degree"/>
+      <br/>
+      <label>Interplanar Spacing:</label>
+      <input type="number" name="spacing3" id="spacing3" placeholder="Enter In Pm" />
+      <br/>
+      <label>Value of Order:</label>
+      <input type="number" name="order3" id="order3" placeholder="Enter an Integer" />
+      <br/>
+      <button type="button" onclick="calculate()">Calculate Wavelength</button>
+      <br/>
+      <br/>
+      <label>Result:</label>
+      <span id="result3"></span>
+
+    </form>
+    <form id="form4" style="display:none;">
+      <label>Incident Wavelength:</label>
+      <input type="number" name="wavelength4" id="wavelength4" placeholder="Enter In Angstrom" />
+      <br/>
+      <label>Interplanar Spacing:</label>
+      <input type="number" name="spacing4" id="spacing4" placeholder="Enter In Pm" />
+      <br/>
+      <label>Value of Order:</label>
+      <input type="number" name="order4" id="order4" placeholder="Enter an Integer" />
+      <br/>
+      <br/>
+      <button type="button" onclick="calculate()">Calculate Theta</button>
+      <br/>
+      <br/>
+      <label>Result:</label>
+      <div id="result4"></div>
+
+    </form>
+    </div>
+
+    
+    
+  </body>
+</html>
+
+
